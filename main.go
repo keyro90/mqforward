@@ -48,7 +48,7 @@ func main() {
 				&cli.StringFlag{
 					Name:  "c",
 					Usage: "Config file path",
-					Value: "~/.mqforward.ini",
+					Value: "~/mqforward.ini",
 				},
 				&cli.BoolFlag{
 					Name:  "d",

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  influxdb:
+    image: library/influxdb:1.7.1
+    environment:
+      - INFLUXDB_ADMIN_USER_PASSWORD=root
+      - INFLUXDB_USER=test
+      - INFLUXDB_USER_PASSWORD=test
+      - INFLUXDB_DB=prism_db
+      - INFLUXDB_HTTP_READINESS_TIMEOUT=30
+    ports:
+    - "8086:8086"
+#    command: /init-influxdb.sh
+
